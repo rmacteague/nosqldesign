@@ -1,0 +1,2988 @@
+{
+  "ModelName": "Programs",
+  "ModelMetadata": {
+    "Author": "",
+    "DateCreated": "Feb 04, 2020, 10:58 AM",
+    "DateLastModified": "Feb 21, 2020, 5:43 PM",
+    "Description": ""
+  },
+  "DataModel": [
+    {
+      "TableName": "Activities",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "PK",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "SK",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "GSI1PK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI1SK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI2PK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI2SK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI3PK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI3SK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Ver",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "TTL",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "_type",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Data",
+          "AttributeType": "M"
+        },
+        {
+          "AttributeName": "Branding",
+          "AttributeType": "M"
+        },
+        {
+          "AttributeName": "SEC_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "USR_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "ACT_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "TRK_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "OWN_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "CMP_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "SubType",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "NumValue",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Desc",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Type",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Status",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "StartDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "EndDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Amount",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Total",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Min",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Max",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Path",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Interval",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Freq",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "TimeZone",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "RegOpenDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "RegClosedDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "TimeSlots",
+          "AttributeType": "SS"
+        },
+        {
+          "AttributeName": "IndAmt",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "GrpAmt",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Rank",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "Subject",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Days",
+          "AttributeType": "SS"
+        },
+        {
+          "AttributeName": "Unit",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Addr1",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Addr2",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Postal",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "City",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "State",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Progress",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "ProgressText",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Registered",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Increment",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "FAQs",
+          "AttributeType": "M"
+        },
+        {
+          "AttributeName": "Denied",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "DenyReason",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Approved",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "EntryDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "TPL_Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "ScheduledDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "LangCode",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "SentDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "CompletionDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "DateAdj",
+          "AttributeType": "N"
+        }
+      ],
+      "TableFacets": [
+        {
+          "FacetName": "Activity",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Activity"
+              },
+              "Data": {
+                "M": {
+                  "Filters": {
+                    "Roles": [
+                      "EmployeeOnPlan",
+                      "EmployeeOffPlan",
+                      "SpouseOnPlan"
+                    ],
+                    "Depts": [
+                      "Sales",
+                      "IT"
+                    ],
+                    "Features": [
+                      "Leaderboard",
+                      "MessageBoard"
+                    ],
+                    "AgeRange": {
+                      "Low": 18,
+                      "High": 50
+                    }
+                  }
+                }
+              },
+              "Branding": {
+                "M": {
+                  "BackgroundColor": "#FFFFFF",
+                  "FontColor": "#CCCCCC",
+                  "Img": "path/img.png"
+                }
+              },
+              "SEC_Id": {
+                "S": "SectionId-123"
+              },
+              "OWN_Id": {
+                "S": "CompanyId-123"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "SubType": {
+                "S": "Fitness"
+              },
+              "Name": {
+                "S": "Walk 5000"
+              },
+              "Type": {
+                "S": "Challenge"
+              },
+              "StartDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "EndDate": {
+                "S": "2020-12-31T00:00:00"
+              },
+              "RegOpenDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "RegClosedDate": {
+                "S": "2020-01-15T00:00:00"
+              },
+              "TPL_Id": {
+                "S": "TemplateId-123"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Activity"
+              },
+              "Branding": {
+                "M": {
+                  "BackgroundColor": "#FFFFFF",
+                  "FontColor": "#CCCCCC",
+                  "Img": "path/img.png"
+                }
+              },
+              "SEC_Id": {
+                "S": "SectionId-123"
+              },
+              "OWN_Id": {
+                "S": "CompanyId-123"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "SubType": {
+                "S": "Sessions"
+              },
+              "Name": {
+                "S": "Blood Drive"
+              },
+              "Type": {
+                "S": "Event"
+              },
+              "StartDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "EndDate": {
+                "S": "2020-12-31T00:00:00"
+              },
+              "RegOpenDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "RegClosedDate": {
+                "S": "2020-01-15T00:00:00"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Activity"
+              },
+              "Data": {
+                "M": {
+                  "Filters": {
+                    "GroupType": "AdminOnly",
+                    "Roles": [
+                      "EmployeeOnPlan",
+                      "EmployeeOffPlan",
+                      "SpouseOnPlan"
+                    ],
+                    "Depts": [
+                      "Sales",
+                      "IT"
+                    ],
+                    "Features": [
+                      "Leaderboard",
+                      "MessageBoard"
+                    ],
+                    "AgeRange": {
+                      "Low": 18,
+                      "High": 50
+                    }
+                  }
+                }
+              },
+              "Branding": {
+                "M": {
+                  "BackgroundColor": "#FFFFFF",
+                  "FontColor": "#CCCCCC",
+                  "Img": "path/img.png"
+                }
+              },
+              "SEC_Id": {
+                "S": "SectionId-123"
+              },
+              "OWN_Id": {
+                "S": "CompanyId-123"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "SubType": {
+                "S": "Count"
+              },
+              "Name": {
+                "S": "1000 Strong"
+              },
+              "Type": {
+                "S": "Challenge"
+              },
+              "StartDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "EndDate": {
+                "S": "2020-12-31T00:00:00"
+              },
+              "RegOpenDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "RegClosedDate": {
+                "S": "2020-01-15T00:00:00"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Activity"
+              },
+              "Data": {
+                "M": {
+                  "Filters": {
+                    "Roles": [
+                      "EmployeeOnPlan",
+                      "EmployeeOffPlan",
+                      "SpouseOnPlan"
+                    ],
+                    "Depts": [
+                      "Sales",
+                      "IT"
+                    ],
+                    "Features": [
+                      "Leaderboard",
+                      "MessageBoard"
+                    ],
+                    "AgeRange": {
+                      "Low": 18,
+                      "High": 50
+                    }
+                  }
+                }
+              },
+              "Branding": {
+                "M": {
+                  "BackgroundColor": "#FFFFFF",
+                  "FontColor": "#CCCCCC",
+                  "Img": "path/img.png"
+                }
+              },
+              "SEC_Id": {
+                "S": "SectionId-123"
+              },
+              "OWN_Id": {
+                "S": "CompanyId-123"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "SubType": {
+                "S": "University"
+              },
+              "Name": {
+                "S": "Smoke Woke"
+              },
+              "Type": {
+                "S": "Challenge"
+              },
+              "StartDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "EndDate": {
+                "S": "2020-12-31T00:00:00"
+              },
+              "RegOpenDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "RegClosedDate": {
+                "S": "2020-01-15T00:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI1PK",
+            "GSI1SK",
+            "GSI2PK",
+            "GSI2SK",
+            "GSI3PK",
+            "GSI3SK",
+            "Ver",
+            "TTL",
+            "_type",
+            "Data",
+            "Branding",
+            "SEC_Id",
+            "OWN_Id",
+            "CMP_Id",
+            "SubType",
+            "Name",
+            "Type",
+            "StartDate",
+            "EndDate",
+            "RegOpenDate",
+            "RegClosedDate",
+            "TPL_Id"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityDetail",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Detail"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Detail"
+              },
+              "_type": {
+                "S": "ActivityDetail"
+              },
+              "Desc": {
+                "S": "Walk 5000 steps a day"
+              },
+              "TimeZone": {
+                "S": "Central Standard Time"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Detail"
+              },
+              "_type": {
+                "S": "ActivityDetail"
+              },
+              "Desc": {
+                "S": "Donate blood four times a year"
+              },
+              "TimeZone": {
+                "S": "Central Standard Time"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Detail"
+              },
+              "_type": {
+                "S": "ActivityDetail"
+              },
+              "Desc": {
+                "S": "Complete 1000 reps of one activity"
+              },
+              "TimeZone": {
+                "S": "Central Standard Time"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity#Detail"
+              },
+              "_type": {
+                "S": "ActivityDetail"
+              },
+              "Desc": {
+                "S": "Take 3 courses on hazards of smoking"
+              },
+              "TimeZone": {
+                "S": "Central Standard Time"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "TTL",
+            "_type",
+            "Desc",
+            "TimeZone",
+            "FAQs"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivitySession",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Sessions#SessionId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Sessions#SessionId-123"
+              },
+              "_type": {
+                "S": "ActivitySession"
+              },
+              "Name": {
+                "S": "Blood Drive Q1"
+              },
+              "StartDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "EndDate": {
+                "S": "2020-01-01T00:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "TTL",
+            "_type",
+            "Data",
+            "Name",
+            "StartDate",
+            "EndDate",
+            "TimeSlots",
+            "Days"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Reward",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "OwnerId",
+            "SortKeyAlias": "OwnerType#RewardType#Rank"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Rewards#Participation#Points"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Reward"
+              },
+              "SubType": {
+                "S": "Points"
+              },
+              "Type": {
+                "S": "Participation"
+              },
+              "Amount": {
+                "N": "50"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Rewards#Leaderboard#Individual#1"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Reward"
+              },
+              "SubType": {
+                "S": "Custom"
+              },
+              "Desc": {
+                "S": "Fitbit Versa"
+              },
+              "Type": {
+                "S": "Leaderboard"
+              },
+              "Rank": {
+                "N": "1"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Rewards#Attendance"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Reward"
+              },
+              "SubType": {
+                "S": "Points"
+              },
+              "Type": {
+                "S": "Attendance"
+              },
+              "Amount": {
+                "N": "100"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Rewards#Participation#Points"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Reward"
+              },
+              "SubType": {
+                "S": "Points"
+              },
+              "Type": {
+                "S": "Participation"
+              },
+              "Amount": {
+                "N": "100"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Rewards#Leaderboard#Individual#1"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Reward"
+              },
+              "SubType": {
+                "S": "Points"
+              },
+              "Type": {
+                "S": "Leaderboard"
+              },
+              "Amount": {
+                "N": "200"
+              },
+              "Rank": {
+                "N": "1"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity#Rewards#Participation#Points"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Reward"
+              },
+              "SubType": {
+                "S": "Points"
+              },
+              "Type": {
+                "S": "Participation"
+              },
+              "Amount": {
+                "N": "100"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI1PK",
+            "GSI1SK",
+            "TTL",
+            "_type",
+            "SubType",
+            "Desc",
+            "Type",
+            "Amount",
+            "Rank"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityTracker",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ProgramId",
+            "SortKeyAlias": "Program#Trackers#TrackerId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Trackers#TrackerId-123"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityTracker"
+              },
+              "Id": {
+                "S": "TrackerId-123"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Trackers#TrackerId-456"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityTracker"
+              },
+              "Id": {
+                "S": "TrackerId-456"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI1PK",
+            "GSI1SK",
+            "GSI2PK",
+            "GSI2SK",
+            "TTL",
+            "_type",
+            "Data",
+            "Id"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "File",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "FileId",
+            "SortKeyAlias": "File"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "FileId-123"
+              },
+              "SK": {
+                "S": "File"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Files"
+              },
+              "GSI2SK": {
+                "S": "Documents#Active"
+              },
+              "_type": {
+                "S": "File"
+              },
+              "Name": {
+                "S": "Waiver"
+              },
+              "Type": {
+                "S": "Document"
+              },
+              "Path": {
+                "S": "path/waiver.pdf"
+              }
+            },
+            {
+              "PK": {
+                "S": "FileId-456"
+              },
+              "SK": {
+                "S": "Video"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Files"
+              },
+              "GSI2SK": {
+                "S": "Videos#Active"
+              },
+              "_type": {
+                "S": "File"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Benefits of Giving Blood",
+                  "Path": "companyid-123/videos/threwillbeblood.mp4",
+                  "Desc": "",
+                  "Img": "companyid-123/images/threwillbeblood.png",
+                  "Id": "VideoId-123"
+                }
+              },
+              "Name": {
+                "S": "Benfits of Giving Blood"
+              },
+              "Type": {
+                "S": "Video"
+              },
+              "Path": {
+                "S": "path/benblood.mp4"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "_type",
+            "Data",
+            "Name",
+            "Type",
+            "Path"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityLeaderboardDef",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ProgramId",
+            "SortKeyAlias": "Program#Leaderboards"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Leaderboard"
+              },
+              "_type": {
+                "S": "ActivityLeaderboard"
+              },
+              "Type": {
+                "S": "Individual"
+              },
+              "IndAmt": {
+                "N": "10"
+              },
+              "GrpAmt": {
+                "N": "10"
+              },
+              "Unit": {
+                "S": "Steps"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "TTL",
+            "_type",
+            "Type",
+            "IndAmt",
+            "GrpAmt",
+            "Unit"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityNotification",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Notification#Type#Id"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Communications#Email#1"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Emails"
+              },
+              "GSI2SK": {
+                "S": "ScheduledDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityCommunication"
+              },
+              "ScheduledDate": {
+                "S": "2020-12-31T00:00:00"
+              },
+              "SentDate": {
+                "S": "2020-12-31T03:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "TTL",
+            "_type",
+            "Data",
+            "Status",
+            "Id",
+            "ScheduledDate",
+            "SentDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityMetric",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Metrics#Type"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Metrics#SignedUp"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityMetric"
+              },
+              "NumValue": {
+                "N": "700"
+              },
+              "Type": {
+                "S": "SignedUp"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Metrics#SignedUp"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityMetric"
+              },
+              "NumValue": {
+                "N": "567"
+              },
+              "Type": {
+                "S": "SignedUp"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Metrics#SignedUp"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityMetric"
+              },
+              "NumValue": {
+                "N": "1"
+              },
+              "Type": {
+                "S": "SignedUp"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity#Metrics#SignedUp"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityMetric"
+              },
+              "NumValue": {
+                "N": "15"
+              },
+              "Type": {
+                "S": "SignedUp"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity#Metrics#Participating"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Activities#Dashboard"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityMetric"
+              },
+              "NumValue": {
+                "N": "10"
+              },
+              "Type": {
+                "S": "Participating"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "TTL",
+            "_type",
+            "NumValue",
+            "Type"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Section",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "SectionId",
+            "SortKeyAlias": "Section"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "SectionId-123"
+              },
+              "SK": {
+                "S": "Section"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Program"
+              },
+              "GSI1SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Sections"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "Section"
+              },
+              "Data": {
+                "M": {
+                  "ActivityOrder": {
+                    "ActivityId-123": 0,
+                    "ActivityId-456": 1,
+                    "ActivityId-789": 2,
+                    "ActivityId-101112": 3
+                  }
+                }
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "Name": {
+                "S": "Fitness Challenges"
+              },
+              "Type": {
+                "S": "Company"
+              },
+              "StartDate": {
+                "S": "2020-01-01T00:00:00"
+              },
+              "EndDate": {
+                "S": "2020-12-31T00:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI1PK",
+            "GSI1SK",
+            "GSI2PK",
+            "GSI2SK",
+            "TTL",
+            "_type",
+            "Data",
+            "CMP_Id",
+            "Name",
+            "Type",
+            "StartDate",
+            "EndDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityGroup",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Groups#GroupId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Groups#GroupId-123"
+              },
+              "_type": {
+                "S": "ActivityGroup"
+              },
+              "OWN_Id": {
+                "S": "UserId-123"
+              },
+              "Name": {
+                "S": "Rep This!"
+              },
+              "Status": {
+                "S": "Active"
+              },
+              "Rank": {
+                "N": "440"
+              },
+              "Progress": {
+                "N": "4.4"
+              },
+              "ProgressText": {
+                "S": "440 / 10000 reps"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "TTL",
+            "_type",
+            "OWN_Id",
+            "Name",
+            "Status",
+            "Rank",
+            "Progress",
+            "ProgressText"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityRegistration",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "UserId#Registrations",
+            "SortKeyAlias": "ActivityId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "SK": {
+                "S": "ActivityId-123"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "GSI3SK": {
+                "S": "ActivityEndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityRegistration"
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "ACT_Id": {
+                "S": "ActivityId-123"
+              },
+              "Status": {
+                "S": "Registered"
+              },
+              "Progress": {
+                "N": "20"
+              },
+              "ProgressText": {
+                "S": "1000/5000 steps"
+              },
+              "Registered": {
+                "S": "2020-01-05T00:00:00"
+              }
+            },
+            {
+              "PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "SK": {
+                "S": "ActivityId-456"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "GSI3SK": {
+                "S": "ActivityEndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityRegistrations"
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "ACT_Id": {
+                "S": "ActivityId-456"
+              },
+              "Status": {
+                "S": "Registered"
+              },
+              "Progress": {
+                "N": "0"
+              },
+              "ProgressText": {
+                "S": "0/4 blood drives"
+              },
+              "Registered": {
+                "S": "2020-01-05T00:00:00"
+              }
+            },
+            {
+              "PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "SK": {
+                "S": "ActivityId-789"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "GSI3SK": {
+                "S": "ActivityEndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityRegistration"
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "ACT_Id": {
+                "S": "ActivityId-789"
+              },
+              "Status": {
+                "S": "Registered"
+              },
+              "Progress": {
+                "N": "44"
+              },
+              "ProgressText": {
+                "S": "440/1000 reps"
+              },
+              "Registered": {
+                "S": "2020-01-05T00:00:00"
+              }
+            },
+            {
+              "PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "SK": {
+                "S": "ActivityId-101112"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "GSI3SK": {
+                "S": "ActivityEndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityRegistration"
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "ACT_Id": {
+                "S": "ActivityId-101112"
+              },
+              "Status": {
+                "S": "Completed"
+              },
+              "Progress": {
+                "N": "100"
+              },
+              "ProgressText": {
+                "S": "3/3 courses"
+              },
+              "Registered": {
+                "S": "2020-01-05T00:00:00"
+              },
+              "CompletionDate": {
+                "S": "2020-01-15T00:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI3PK",
+            "GSI3SK",
+            "TTL",
+            "_type",
+            "USR_Id",
+            "ACT_Id",
+            "Status",
+            "Rank",
+            "Progress",
+            "ProgressText",
+            "Registered",
+            "CompletionDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Transactions",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "UserId#Transactions",
+            "SortKeyAlias": "OwnerId#Type#Date"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "UserId-123#Transactions"
+              },
+              "SK": {
+                "S": "ActivityId-123#Participation"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Transactions"
+              },
+              "GSI3SK": {
+                "S": "2020-01-15T00:00:00"
+              },
+              "_type": {
+                "S": "Transaction"
+              },
+              "OWN_Id": {
+                "S": "ActivityId-123"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "Type": {
+                "S": "Participation"
+              },
+              "Total": {
+                "N": "10"
+              },
+              "Increment": {
+                "N": "10"
+              }
+            },
+            {
+              "PK": {
+                "S": "UserId-123#Transactions"
+              },
+              "SK": {
+                "S": "ActivityId-456#Attendance"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Transactions"
+              },
+              "GSI3SK": {
+                "S": "2020-01-15T00:00:00"
+              },
+              "_type": {
+                "S": "Transaction"
+              },
+              "OWN_Id": {
+                "S": "ActivityId-456"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "Type": {
+                "S": "Attendance"
+              },
+              "Total": {
+                "N": "25"
+              },
+              "Increment": {
+                "N": "25"
+              }
+            },
+            {
+              "PK": {
+                "S": "UserId-123#Transactions"
+              },
+              "SK": {
+                "S": "ActivityId-789#Attendance"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Transactions"
+              },
+              "GSI3SK": {
+                "S": "2020-01-15T00:00:00"
+              },
+              "_type": {
+                "S": "Transaction"
+              },
+              "OWN_Id": {
+                "S": "ActivityId-789"
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "Type": {
+                "S": "Participation"
+              },
+              "Total": {
+                "N": "20"
+              },
+              "Increment": {
+                "N": "20"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI3PK",
+            "GSI3SK",
+            "TTL",
+            "_type",
+            "OWN_Id",
+            "CMP_Id",
+            "Type",
+            "Total",
+            "Increment"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityCourse",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Courses#CourseId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity#Courses#CourseId-123"
+              },
+              "GSI2PK": {
+                "S": "CourseId-123"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityCourse"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Smoke Woke"
+                }
+              },
+              "Id": {
+                "S": "CourseId-123"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-101112"
+              },
+              "SK": {
+                "S": "Activity#Courses#CourseId-456"
+              },
+              "GSI2PK": {
+                "S": "CourseId-123"
+              },
+              "GSI2SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "ActivityCourse"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Smoke Woke PartII"
+                }
+              },
+              "Id": {
+                "S": "CourseId-123"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "TTL",
+            "_type",
+            "Data",
+            "Id",
+            "CompletionDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityGroupDef",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Groups"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Groups"
+              },
+              "_type": {
+                "S": "ActivityGroupDef"
+              },
+              "Type": {
+                "S": "AdminOnly"
+              },
+              "Min": {
+                "N": "1"
+              },
+              "Max": {
+                "N": "10"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "TTL",
+            "_type",
+            "Type",
+            "Min",
+            "Max"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "SessionRegistration",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "UserId-123#Registrations",
+            "SortKeyAlias": "ProgramId#Sessions#SessionId-123"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "SK": {
+                "S": "ActivityId-123#Sessions#SessionId-123"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "GSI3SK": {
+                "S": "ActivityEndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "SessionRegistration"
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "ACT_Id": {
+                "S": "ActivityId-123"
+              },
+              "Status": {
+                "S": "Registered"
+              },
+              "Registered": {
+                "S": "2020-12-31T00:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI3PK",
+            "GSI3SK",
+            "TTL",
+            "_type",
+            "USR_Id",
+            "ACT_Id",
+            "Status",
+            "Registered",
+            "Denied",
+            "DenyReason",
+            "Approved",
+            "CompletionDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "GroupRegistration",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "UserId-123#Registrations",
+            "SortKeyAlias": "ActivityId#Groups#GroupId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "SK": {
+                "S": "ActivityId-123#Groups#GroupId-123"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Registrations"
+              },
+              "GSI3SK": {
+                "S": "EndDate#2020-12-31T00:00:00"
+              },
+              "_type": {
+                "S": "GroupRegistration"
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "ACT_Id": {
+                "S": "ActivityId-789"
+              },
+              "Status": {
+                "S": "Registered"
+              },
+              "Registered": {
+                "S": "2020-12-31T00:00:00"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI3PK",
+            "GSI3SK",
+            "TTL",
+            "_type",
+            "USR_Id",
+            "ACT_Id",
+            "Status",
+            "Registered",
+            "CompletionDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Venue",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "VenueId",
+            "SortKeyAlias": "Venue"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "VenueId-123"
+              },
+              "SK": {
+                "S": "Venue"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Venues"
+              },
+              "GSI2SK": {
+                "S": "IL#Chicago#60606"
+              },
+              "_type": {
+                "S": "Venue"
+              },
+              "Name": {
+                "S": "Willis Tower"
+              },
+              "Addr1": {
+                "S": "233 S Wacker Dr"
+              },
+              "Addr2": {
+                "S": "Suite 5700"
+              },
+              "Postal": {
+                "S": "60606"
+              },
+              "City": {
+                "S": "Chicago"
+              },
+              "State": {
+                "S": "IL"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "_type",
+            "Name",
+            "Addr1",
+            "Addr2",
+            "Postal",
+            "City",
+            "State"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Template",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "TemplateId",
+            "SortKeyAlias": "Template#Version"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "TemplateId-123"
+              },
+              "SK": {
+                "S": "Activity"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Templates"
+              },
+              "GSI2SK": {
+                "S": "Activity#Challenge"
+              },
+              "_type": {
+                "S": "Template"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Walk 5000",
+                  "Type": "Challenge",
+                  "SubType": "Fitness",
+                  "Branding": {
+                    "BackgroundColor": "#FFFFFF",
+                    "FontColor": "#CCCCCC",
+                    "Img": "path/img.png"
+                  },
+                  "Data": {
+                    "Filters": {
+                      "Roles": [
+                        "EmployeeOnPlan",
+                        "EmployeeOffPlan",
+                        "SpouseOnPlan"
+                      ],
+                      "Depts": [
+                        "Sales",
+                        "IT"
+                      ],
+                      "Features": [
+                        "Leaderboard",
+                        "MessageBoard"
+                      ],
+                      "AgeRange": {
+                        "Low": 18,
+                        "High": 50
+                      }
+                    }
+                  }
+                }
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "SubType": {
+                "S": "Challenge"
+              },
+              "Type": {
+                "S": "Activity"
+              }
+            },
+            {
+              "PK": {
+                "S": "TemplateId-123"
+              },
+              "SK": {
+                "S": "Activity#File#VideoId-123"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Templates"
+              },
+              "GSI2SK": {
+                "S": "Activity#Challenge#Files#Videos"
+              },
+              "_type": {
+                "S": "FileTemplate"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Benefits of Giving Blood",
+                  "Path": "companyid-123/videos/threwillbeblood.mp4",
+                  "Desc": "",
+                  "Img": "companyid-123/images/threwillbeblood.png",
+                  "Id": "VideoId-123"
+                }
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "SubType": {
+                "S": "Video"
+              },
+              "Type": {
+                "S": "File"
+              }
+            },
+            {
+              "PK": {
+                "S": "TemplateId-123"
+              },
+              "SK": {
+                "S": "Activity#Venue#VenueId-123"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Templates"
+              },
+              "GSI2SK": {
+                "S": "Activity#Challenge#Venues"
+              },
+              "_type": {
+                "S": "VenueTemplate"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Willis Tower",
+                  "Addr1": "233 S Wacker Dr",
+                  "Addr2": "Suite 5700",
+                  "Postal": "60606",
+                  "City": "Chicago",
+                  "State": "IL"
+                }
+              },
+              "CMP_Id": {
+                "S": "CompanId-123"
+              },
+              "SubType": {
+                "S": "Event"
+              },
+              "Type": {
+                "S": "Venue"
+              }
+            },
+            {
+              "PK": {
+                "S": "TemplateId-123"
+              },
+              "SK": {
+                "S": "Activity#Notifications#NotificationId-123"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Templates"
+              },
+              "GSI2SK": {
+                "S": "Activity#Challenge#Notofications#Emails"
+              },
+              "_type": {
+                "S": "NotificationTemplate"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Invitation",
+                  "Type": "Email",
+                  "SubType": "Invitation",
+                  "Subject": "[ActivityName]: Invitation",
+                  "Desc": "Registration for {{{ActivityName}}} opens tomorrow at {{{RegOpenDate}}}",
+                  "DateAdj": -7
+                }
+              },
+              "CMP_Id": {
+                "S": "CompanId-123"
+              },
+              "SubType": {
+                "S": "{     \"Name\": \"Invitation\",     \"Type\": \"Email\",     \"SubType\": \"Invitation\",     \"Subject\": \"[ActivityName]: Invitation\",     \"Desc\": \"Registration for {{{ActivityName}}} opens tomorrow at {{{RegOpenDate}}}\",     \"DateAdj\": -7 }"
+              },
+              "Type": {
+                "S": "Notification"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "GSI3PK",
+            "GSI3SK",
+            "Ver",
+            "_type",
+            "Data",
+            "CMP_Id",
+            "SubType",
+            "Type"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Translation",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "Id",
+            "SortKeyAlias": "Id#Translations#LanguageCode#Type#Version"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "TemplateId-123"
+              },
+              "SK": {
+                "S": "Translations#es-419#Activity#0"
+              },
+              "Ver": {
+                "N": "0"
+              },
+              "Data": {
+                "M": {
+                  "Branding": {
+                    "Banner": "banner_es-419.png"
+                  },
+                  "Name": "SpanishName",
+                  "Desc": "SpanishTitle",
+                  "Videos": [
+                    {
+                      "Id": 1,
+                      "Path": "path_es-419.mp4"
+                    }
+                  ]
+                }
+              },
+              "Type": {
+                "S": "Activity"
+              },
+              "LangCode": {
+                "S": "es-419"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "Ver",
+            "Data",
+            "Type",
+            "LangCode"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityFile",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Files#FileId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Files#FileId-123"
+              },
+              "GSI2PK": {
+                "S": "FileId-123"
+              },
+              "GSI2SK": {
+                "S": "Activity#Challenge#Active#ActvityEndDate#"
+              },
+              "Id": {
+                "S": "FileId-123"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Files#FileId-456"
+              },
+              "GSI2PK": {
+                "S": "FileId-456"
+              },
+              "GSI2SK": {
+                "S": "Activity#Event#Active#ActvityEndDate#"
+              },
+              "Id": {
+                "S": "FileId-456"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "Data",
+            "Id"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityVenue",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId-123",
+            "SortKeyAlias": "Activity#Venues#VenueId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Venues#VenueId-123"
+              },
+              "GSI2PK": {
+                "S": "VenueId-123"
+              },
+              "GSI2SK": {
+                "S": "Activity#Event#ActivityEndDate#"
+              },
+              "Data": {
+                "M": {
+                  "Name": "Willis Tower",
+                  "Addr1": "233 S Wacker Dr",
+                  "Addr2": "Suite 5700",
+                  "Postal": "60606",
+                  "City": "Chicago",
+                  "State": "IL"
+                }
+              },
+              "Id": {
+                "S": "VenueId-123"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "Data",
+            "Id"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Tracker",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "Tracker",
+            "SortKeyAlias": "TrackerId"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "TrackerId-123"
+              },
+              "SK": {
+                "S": "Tracker"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Trackers"
+              },
+              "GSI2SK": {
+                "S": "Fitness"
+              },
+              "Data": {
+                "M": [
+                  {
+                    "EntryName": "Intensity",
+                    "EntrySingularUnits": "",
+                    "EntryPluralUnits": "",
+                    "EntryUnitName": null,
+                    "GraphType": 1,
+                    "Color": "0xFF00FF",
+                    "TrackEnabled": false,
+                    "GoalEnabled": false,
+                    "DecimalPlaces": 2,
+                    "EntryValidations": [],
+                    "EntryType": "dropdown",
+                    "Options": [
+                      {
+                        "OptionName": "2.0 mph",
+                        "OptionValue": "2.8",
+                        "MPH": "2",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      },
+                      {
+                        "OptionName": "2.5 mph",
+                        "OptionValue": "3",
+                        "MPH": "2.5",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      },
+                      {
+                        "OptionName": "3.0 mph",
+                        "OptionValue": "3.5",
+                        "MPH": "3",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      },
+                      {
+                        "OptionName": "3.5 mph",
+                        "OptionValue": "4.3",
+                        "MPH": "3.5",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      },
+                      {
+                        "OptionName": "4.0 mph",
+                        "OptionValue": "5",
+                        "MPH": "4",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      },
+                      {
+                        "OptionName": "4.5 mph",
+                        "OptionValue": "7",
+                        "MPH": "4.5",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      },
+                      {
+                        "OptionName": "5.0 mph",
+                        "OptionValue": "8.3",
+                        "MPH": "5",
+                        "DisplayOrder": 0,
+                        "IsChecked": false
+                      }
+                    ],
+                    "PositiveOutcome": null
+                  },
+                  {
+                    "EntryName": "Duration",
+                    "EntrySingularUnits": "minute",
+                    "EntryPluralUnits": "minutes",
+                    "EntryUnitName": null,
+                    "GraphType": 1,
+                    "Color": "0xFF0000",
+                    "TrackEnabled": true,
+                    "GoalEnabled": true,
+                    "DecimalPlaces": 2,
+                    "EntryValidations": [
+                      {
+                        "Max": 720,
+                        "Min": 0,
+                        "CheckRange": true,
+                        "ValidationTypeName": "Double",
+                        "ValidationType": 5,
+                        "ErrorMessage": "Value must be between 0 and 720",
+                        "TranslationKey": "NumberValidationRange"
+                      }
+                    ],
+                    "EntryType": "text",
+                    "Options": [],
+                    "PositiveOutcome": null
+                  },
+                  {
+                    "EntryName": "Distance",
+                    "EntrySingularUnits": "mile",
+                    "EntryPluralUnits": "miles",
+                    "EntryUnitName": "Miles",
+                    "GraphType": 0,
+                    "Color": null,
+                    "TrackEnabled": true,
+                    "GoalEnabled": true,
+                    "DecimalPlaces": 2,
+                    "EntryValidations": [
+                      {
+                        "Max": 30,
+                        "Min": 0,
+                        "CheckRange": true,
+                        "ValidationTypeName": "Double",
+                        "ValidationType": 5,
+                        "ErrorMessage": "Value must be between 0 and 30",
+                        "TranslationKey": "NumberValidationRange"
+                      }
+                    ],
+                    "EntryType": "text",
+                    "Options": [],
+                    "PositiveOutcome": null
+                  },
+                  {
+                    "EntryName": "Steps",
+                    "EntrySingularUnits": "step",
+                    "EntryPluralUnits": "steps",
+                    "EntryUnitName": "",
+                    "GraphType": 1,
+                    "Color": null,
+                    "TrackEnabled": true,
+                    "GoalEnabled": true,
+                    "DecimalPlaces": 2,
+                    "EntryValidations": [
+                      {
+                        "Max": 60000,
+                        "Min": 0,
+                        "CheckRange": true,
+                        "ValidationTypeName": "Double",
+                        "ValidationType": 5,
+                        "ErrorMessage": "Value must be between 0 and 60000",
+                        "TranslationKey": "NumberValidationRange"
+                      }
+                    ],
+                    "EntryType": null,
+                    "Options": [],
+                    "PositiveOutcome": null
+                  },
+                  {
+                    "EntryName": "Calories",
+                    "EntrySingularUnits": "calory",
+                    "EntryPluralUnits": "calories",
+                    "EntryUnitName": null,
+                    "GraphType": 1,
+                    "Color": "0x00FF00",
+                    "TrackEnabled": true,
+                    "GoalEnabled": true,
+                    "DecimalPlaces": 2,
+                    "EntryValidations": [
+                      {
+                        "Max": 15000,
+                        "Min": 0,
+                        "CheckRange": true,
+                        "ValidationTypeName": "Double",
+                        "ValidationType": 5,
+                        "ErrorMessage": "Value must be between 0 and 15000",
+                        "TranslationKey": "NumberValidationRange"
+                      }
+                    ],
+                    "EntryType": "text",
+                    "Options": [],
+                    "PositiveOutcome": null
+                  }
+                ]
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "Name": {
+                "S": "Walking"
+              },
+              "Type": {
+                "S": "Fitness"
+              }
+            },
+            {
+              "PK": {
+                "S": "TrackerId-456"
+              },
+              "SK": {
+                "S": "Tracker"
+              },
+              "GSI2PK": {
+                "S": "CompanyId-123#Trackers"
+              },
+              "GSI2SK": {
+                "S": "Count"
+              },
+              "Data": {
+                "M": [
+                  {
+                    "EntryName": "1000 Strong",
+                    "EntrySingularUnits": "rep",
+                    "EntryPluralUnits": "reps",
+                    "EntryUnitName": "Other",
+                    "GraphType": 1,
+                    "Color": null,
+                    "TrackEnabled": true,
+                    "GoalEnabled": true,
+                    "DecimalPlaces": 1,
+                    "EntryValidations": [
+                      {
+                        "Max": null,
+                        "Min": null,
+                        "CheckRange": false,
+                        "ErrorMessage": "Value must be a valid number.",
+                        "ValidationTypeName": "Double",
+                        "ValidationType": 5,
+                        "TranslationKey": "NumberValidation"
+                      }
+                    ],
+                    "EntryType": null,
+                    "Options": [],
+                    "PositiveOutcome": null
+                  }
+                ]
+              },
+              "CMP_Id": {
+                "S": "CompanyId-123"
+              },
+              "Name": {
+                "S": "1000 Strong"
+              },
+              "Type": {
+                "S": "Count"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI2PK",
+            "GSI2SK",
+            "Data",
+            "CMP_Id",
+            "Name",
+            "Type"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "TrackerEntries",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "UserId#Entries",
+            "SortKeyAlias": "TrackerId#Date"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "UserId-123#Entries"
+              },
+              "SK": {
+                "S": "TrackerId-123#2016-07-07T01:12:13.171Z"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Entries"
+              },
+              "GSI3SK": {
+                "S": "2016-07-07T01:12:13.171Z"
+              },
+              "Data": {
+                "M": [
+                  {
+                    "FieldName": "Intensity",
+                    "Value": "2.8"
+                  },
+                  {
+                    "FieldName": "Duration",
+                    "Value": "50"
+                  },
+                  {
+                    "FieldName": "Distance",
+                    "Value": "15"
+                  },
+                  {
+                    "FieldName": "Steps",
+                    "Value": "30000"
+                  },
+                  {
+                    "FieldName": "Calories",
+                    "Value": "121"
+                  }
+                ]
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "TRK_Id": {
+                "S": "TrackerId-123"
+              },
+              "Type": {
+                "S": "Manual"
+              },
+              "EntryDate": {
+                "S": "2016-07-07T01:12:13.171Z"
+              }
+            },
+            {
+              "PK": {
+                "S": "UserId-123#Entries"
+              },
+              "SK": {
+                "S": "TrackerId-456#2016-07-07T01:12:13.171Z"
+              },
+              "GSI3PK": {
+                "S": "UserId-123#Entries"
+              },
+              "GSI3SK": {
+                "S": "2016-07-07T01:12:13.171Z"
+              },
+              "Data": {
+                "M": [
+                  {
+                    "FieldName": "Intensity",
+                    "Value": "2.8"
+                  },
+                  {
+                    "FieldName": "Duration",
+                    "Value": "50"
+                  },
+                  {
+                    "FieldName": "Distance",
+                    "Value": "15"
+                  },
+                  {
+                    "FieldName": "Steps",
+                    "Value": "30000"
+                  },
+                  {
+                    "FieldName": "Calories",
+                    "Value": "121"
+                  }
+                ]
+              },
+              "USR_Id": {
+                "S": "UserId-123"
+              },
+              "TRK_Id": {
+                "S": "TrackerId-123"
+              },
+              "Type": {
+                "S": "Manual"
+              },
+              "EntryDate": {
+                "S": "2016-07-07T01:12:13.171Z"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI3PK",
+            "GSI3SK",
+            "Data",
+            "USR_Id",
+            "TRK_Id",
+            "Type",
+            "EntryDate"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "ActivityGoal",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "ActivityId",
+            "SortKeyAlias": "Activity#Goals#Type"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "ActivityId-123"
+              },
+              "SK": {
+                "S": "Activity#Goals#Primary"
+              },
+              "Type": {
+                "S": "Primary"
+              },
+              "Amount": {
+                "N": "5000"
+              },
+              "Interval": {
+                "S": "Days"
+              },
+              "Freq": {
+                "S": "Challenge"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Goals#Attendance"
+              },
+              "Type": {
+                "S": "Attendance"
+              },
+              "Amount": {
+                "N": "4"
+              },
+              "Interval": {
+                "S": "Sessions"
+              },
+              "Freq": {
+                "S": "Event"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-456"
+              },
+              "SK": {
+                "S": "Activity#Goals#Alternative"
+              },
+              "Type": {
+                "S": "Alternative"
+              },
+              "Amount": {
+                "N": "5"
+              },
+              "Interval": {
+                "S": "Outcomes"
+              },
+              "Freq": {
+                "S": "Challenge"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Goals#Individual"
+              },
+              "Type": {
+                "S": "Individual"
+              },
+              "Amount": {
+                "N": "1000"
+              },
+              "Interval": {
+                "S": "Reps"
+              },
+              "Freq": {
+                "S": "Challenge"
+              }
+            },
+            {
+              "PK": {
+                "S": "ActivityId-789"
+              },
+              "SK": {
+                "S": "Activity#Goals#Individual"
+              },
+              "Type": {
+                "S": "Group"
+              },
+              "Amount": {
+                "N": "10000"
+              },
+              "Interval": {
+                "S": "Reps"
+              },
+              "Freq": {
+                "S": "Challenge"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "Type",
+            "Amount",
+            "Interval",
+            "Freq"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        },
+        {
+          "FacetName": "Notification",
+          "KeyAttributeAlias": {
+            "PartitionKeyAlias": "NotificationId",
+            "SortKeyAlias": "Notification"
+          },
+          "TableData": [
+            {
+              "PK": {
+                "S": "NotificationId-123"
+              },
+              "SK": {
+                "S": "Notification"
+              },
+              "GSI1PK": {
+                "S": "CompanyId-123#Notifications"
+              },
+              "GSI1SK": {
+                "S": "Email#Activity"
+              },
+              "_type": {
+                "S": "Notification"
+              },
+              "SubType": {
+                "S": "Invitation"
+              },
+              "Desc": {
+                "S": "Registration for {{{ActivityName}}} opens tomorrow at {{{RegOpenDate}}}"
+              },
+              "Name": {
+                "S": "Invitation"
+              },
+              "Type": {
+                "S": "Email"
+              },
+              "Subject": {
+                "S": "[ActivityName]: Invitation"
+              },
+              "DateAdj": {
+                "N": "-7"
+              }
+            }
+          ],
+          "NonKeyAttributes": [
+            "GSI1PK",
+            "GSI1SK",
+            "_type",
+            "SubType",
+            "Desc",
+            "Name",
+            "Type",
+            "Subject",
+            "DateAdj"
+          ],
+          "DataAccess": {
+            "MySql": {}
+          }
+        }
+      ],
+      "GlobalSecondaryIndexes": [
+        {
+          "IndexName": "GSI1PK_GSI1SK",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI1PK",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI1SK",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "INCLUDE",
+            "NonKeyAttributes": [
+              "PK",
+              "Data",
+              "Branding",
+              "Name",
+              "Type",
+              "SK",
+              "Status",
+              "RegOpenDate",
+              "RegClosedDate",
+              "StartDate",
+              "EndDate",
+              "_type",
+              "Amount",
+              "Id",
+              "SubType",
+              "SEC_Id"
+            ]
+          }
+        },
+        {
+          "IndexName": "GSI2PK_GSI2SK",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI2PK",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI2SK",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI3PK_GSI3SK",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI3PK",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI3SK",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "INCLUDE",
+            "NonKeyAttributes": [
+              "Name",
+              "PK",
+              "_type",
+              "Data",
+              "Id",
+              "TRK_Id",
+              "OWN_Id",
+              "USR_Id",
+              "Increment",
+              "Rank",
+              "Progress",
+              "ProgressText",
+              "SK",
+              "Status",
+              "Type",
+              "SubType"
+            ]
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    }
+  ]
+}
